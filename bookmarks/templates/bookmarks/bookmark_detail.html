@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% extends "base_generic.html" %}
+
+{% block body %}
+  <h1>Bookmarks</h1>
+
+  <p><strong>URL:</strong> {{ bookmark.url }}</p>
+  <p><strong>Name:</strong> {{ bookmark.name }}</p>
+  <p><strong>Description:</strong> {{ bookmark.description }}</p>
+  <p><strong>Tags:</strong> {{ bookmark.tag }}</p>
+
+{% endblock %}
+
+</html>
