@@ -1,7 +1,11 @@
 {% extends 'base_generic.html' %}
 
 {% block body %}
-    <h2 style="color: rgba(0,34,255,0.83)">Bookmarks</h2>
+<div class="alert alert-success" role="alert">
+    <h1>Bookmarks</h1>
+</div>
+<div class="alert alert-info" role="alert">
     <p>Check all <a href="{% url 'bookmark' %}">Bookmarks here</a>.</p>
     <p>Create new bookmark, <a href="{% url 'bookmark-create' %}">click here</a>.</p>
+</div>
 {% endblock %}

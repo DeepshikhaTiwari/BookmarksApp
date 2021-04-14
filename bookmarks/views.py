@@ -10,12 +10,12 @@ def index(request):
 
 class BookmarkDetailView(generic.DetailView):
     model = bookmark
-    paginate_by = 5
+    paginate_by = 4
 
 
 class BookmarkListView(generic.ListView):
     model = bookmark
-    paginate_by = 5
+    paginate_by = 4
 
 
 class CreateBookmark(generic.CreateView):
@@ -31,5 +31,5 @@ class UpdateBookmark(generic.UpdateView):
 
 class DeleteBookmark(generic.DeleteView):
     model = bookmark
-    context_object_name = 'bookmarks'
+    template_name = 'bookmarks/bookmark_delete.html'
     success_url = reverse_lazy('bookmark')
