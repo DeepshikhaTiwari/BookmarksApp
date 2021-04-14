@@ -5,12 +5,16 @@
     {% extends "base_generic.html" %}
 
 {% block body %}
+  <div class="alert alert-success" role="alert">
   <h1>Bookmark List</h1>
+  </div>
   {% if bookmark_list %}
   <ul>
     {% for bookmark in bookmark_list %}
       <li>
+        <div class="alert alert-info" role="alert">
         <a href="{{ bookmark.get_absolute_url }}">{{ bookmark.name }}</a>
+        </div>
       </li>
     {% endfor %}
   </ul>

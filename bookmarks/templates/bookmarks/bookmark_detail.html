@@ -7,13 +7,15 @@
 {% extends "base_generic.html" %}
 
 {% block body %}
+<div class="alert alert-success" role="alert">
   <h1>Bookmarks</h1>
-
+</div>
+<div class="alert alert-info" role="alert">
   <p><strong>URL:</strong> {{ bookmark.url }}</p>
   <p><strong>Name:</strong> {{ bookmark.name }}</p>
   <p><strong>Description:</strong> {{ bookmark.description }}</p>
   <p><strong>Tags:</strong> {{ bookmark.tag }}</p>
-
+</div>
 {% endblock %}
 
 </html>
