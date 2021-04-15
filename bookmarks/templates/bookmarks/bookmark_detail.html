@@ -14,7 +14,10 @@
   <p><strong>URL:</strong> {{ bookmark.url }}</p>
   <p><strong>Name:</strong> {{ bookmark.name }}</p>
   <p><strong>Description:</strong> {{ bookmark.description }}</p>
-  <p><strong>Tags:</strong> {{ bookmark.tag }}</p>
+  <p><strong>Tags:</strong>
+  {% for tag in bookmark.tag.all %}
+  {{ tag }}
+  {% endfor %}</p>
 </div>
 {% endblock %}
 
